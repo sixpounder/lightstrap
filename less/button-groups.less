@@ -106,9 +106,23 @@
   padding-left: 8px;
   padding-right: 8px;
 }
+
 .btn-group > .btn-lg + .dropdown-toggle {
   padding-left: 12px;
   padding-right: 12px;
+}
+
+// Minimum size hack
+.btn-group .btn-xs.dropdown-toggle {
+  min-height: 20px;
+}
+
+.btn-group .btn-sm.dropdown-toggle {
+  min-height: 28px;
+}
+
+.btn-group .btn-lg.dropdown-toggle {
+  min-height: 46px;
 }
 
 // // Dropdown caret animations where needed
