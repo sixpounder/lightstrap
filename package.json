@@ -1,5 +1,6 @@
 {
   "name": "lightstrap",
+  "private": true,
   "description": "A bootstrap theme",
   "version": "0.1.0",
   "keywords": [
