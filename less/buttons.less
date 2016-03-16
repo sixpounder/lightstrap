@@ -10,6 +10,7 @@
   display: inline-block;
   margin-bottom: 0; // For input.btn
   font-weight: @btn-font-weight;
+  letter-spacing: 1px;
   text-align: center;
   vertical-align: middle;
   touch-action: manipulation;
@@ -20,6 +21,7 @@
   .button-size(@padding-base-vertical; @padding-base-horizontal; @buttons-font-size; @line-height-base; @btn-border-radius-base);
   font-weight: 300;
   text-transform: uppercase;
+
   .user-select(none);
 
   &,
@@ -117,6 +119,44 @@
     color: @link-hover-color;
     text-decoration: @link-hover-decoration;
     background-color: transparent;
+  }
+  &[disabled],
+  fieldset[disabled] & {
+    &:hover,
+    &:focus {
+      color: @btn-link-disabled-color;
+      text-decoration: none;
+    }
+  }
+}
+
+// Icon buttons
+// -------------------------
+
+// Make a button look and behave like a link
+.btn-icon {
+  color: @btn-default-color;
+  font-weight: normal;
+  border-radius: 0;
+
+  &,
+  &:active,
+  &.active,
+  &[disabled],
+  fieldset[disabled] & {
+    background-color: transparent;
+    .box-shadow(none);
+  }
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: transparent;
+  }
+  &:hover,
+  &:focus {
+    color: darken(@btn-default-color, 8%);
+    text-decoration: none;
   }
   &[disabled],
   fieldset[disabled] & {

@@ -41,20 +41,20 @@
 }
 /* latin-ext */
 @font-face {
-  font-family: 'Ubuntu Mono';
+  font-family: 'Inconsolata';
   font-style: normal;
   font-weight: 400;
 
-  src: local('Ubuntu Mono'), local('UbuntuMono-Regular'), url(https://fonts.gstatic.com/s/ubuntumono/v6/ViZhet7Ak-LRXZMXzuAfkaE8kM4xWR1_1bYURRojRGc.woff2) format('woff2');
+  src: local('Inconsolata'), url(https://fonts.gstatic.com/s/inconsolata/v12/BjAYBlHtW3CJxDcjzrnZCKE8kM4xWR1_1bYURRojRGc.woff2) format('woff2');
   unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
 @font-face {
-  font-family: 'Ubuntu Mono';
+  font-family: 'Inconsolata';
   font-style: normal;
   font-weight: 400;
 
-  src: local('Ubuntu Mono'), local('UbuntuMono-Regular'), url(https://fonts.gstatic.com/s/ubuntumono/v6/ViZhet7Ak-LRXZMXzuAfkYgp9Q8gbYrhqGlRav_IXfk.woff2) format('woff2');
+  src: local('Inconsolata'), url(https://fonts.gstatic.com/s/inconsolata/v12/BjAYBlHtW3CJxDcjzrnZCIgp9Q8gbYrhqGlRav_IXfk.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
@@ -1806,7 +1806,7 @@ blockquote {
   padding: 10px 20px;
   margin: 0 0 20px;
   font-size: 17.5px;
-  border-left: 5px solid #fff;
+  border-left: 5px solid #aaa;
 }
 blockquote p:last-child,
 blockquote ul:last-child,
@@ -1831,7 +1831,7 @@ blockquote.pull-right {
   padding-right: 15px;
   padding-left: 0;
   text-align: right;
-  border-right: 5px solid #fff;
+  border-right: 5px solid #aaa;
   border-left: 0;
 }
 .blockquote-reverse footer:before,
@@ -1859,7 +1859,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: "Inconsolata", "Liberation Mono", Menlo, Courier, monospace;
 }
 code {
   padding: 2px 4px;
@@ -3343,6 +3343,7 @@ select[multiple].input-lg {
   line-height: 1.42857143;
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: 1px;
   white-space: nowrap;
   vertical-align: middle;
   -ms-touch-action: manipulation;
@@ -3355,6 +3356,9 @@ select[multiple].input-lg {
   background-image: none;
   border: 1px solid transparent;
   border-radius: 4px;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .btn:focus,
 .btn:active:focus,
@@ -3764,6 +3768,38 @@ fieldset[disabled] .btn-link {
 fieldset[disabled] .btn-link:hover,
 .btn-link[disabled]:focus,
 fieldset[disabled] .btn-link:focus {
+  color: #aaa;
+  text-decoration: none;
+}
+.btn-icon {
+  font-weight: normal;
+  color: #333;
+  border-radius: 0;
+}
+.btn-icon,
+.btn-icon:active,
+.btn-icon.active,
+.btn-icon[disabled],
+fieldset[disabled] .btn-icon {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.btn-icon,
+.btn-icon:hover,
+.btn-icon:focus,
+.btn-icon:active {
+  border-color: transparent;
+}
+.btn-icon:hover,
+.btn-icon:focus {
+  color: #1f1f1f;
+  text-decoration: none;
+}
+.btn-icon[disabled]:hover,
+fieldset[disabled] .btn-icon:hover,
+.btn-icon[disabled]:focus,
+fieldset[disabled] .btn-icon:focus {
   color: #aaa;
   text-decoration: none;
 }
@@ -6763,6 +6799,11 @@ ul.pieces-collection li p.help-block {
       -ms-transform: rotate(29deg) skew(-35deg);
        -o-transform: rotate(29deg) skew(-35deg);
           transform: rotate(29deg) skew(-35deg);
+}
+.CodeMirror {
+  height: 100%;
+  font-family: "Inconsolata", "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 18px;
 }
 .modal-open {
   overflow: hidden;
