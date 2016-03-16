@@ -1415,6 +1415,9 @@ body {
   color: #242628;
   background-color: #fff;
 }
+body.padded {
+  padding-top: 50px;
+}
 input,
 button,
 select,
@@ -3356,9 +3359,6 @@ select[multiple].input-lg {
   background-image: none;
   border: 1px solid transparent;
   border-radius: 4px;
-
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 .btn:focus,
 .btn:active:focus,
