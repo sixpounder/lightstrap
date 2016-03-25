@@ -1,13 +1,63 @@
 @toolbar-bg-color       : @navbar-default-bg;
-@toolbar-nav-color      : @gray-dark;
+@toolbar-nav-color      : @gray-light;
 @toolbar-nav-highlight  : lighten(@toolbar-bg-color, 40%);
 @toolbar-nav-active     : @link-color;
-@toolbar-base-width     : 50px;
+@toolbar-base-width     : 200px;
+
+@toolbar-footer-height  : 40px;
 
 .toolbar {
-  z-index: 0;
   background-color: @toolbar-bg-color;
   width: @toolbar-base-width;
+  padding: 10px;
+  text-align: center;
+  z-index: 0;
+
+  header {
+    font-weight: bold;
+    font-size: @font-size-large;
+    display: block;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: @toolbar-footer-height;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    background-color: inherit;
+    color: @toolbar-nav-color;
+    font-weight: 200;
+    border-top: 1px solid #e6e6e6;
+    align-items: center;
+
+    a {
+      font-size: 10px;
+      font-weight: 200;
+      text-transform: uppercase;
+      color: @toolbar-nav-color;
+      &:hover, &:active {
+        color: darken(@toolbar-nav-color, 10%);
+      }
+    }
+
+    section {
+      border-right: 1px solid @toolbar-nav-color;
+      flex-grow: 1;
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+
+  .toolbar-content {
+    height: 100%;
+    overflow: auto;
+  }
+
   ul {
     list-style-type: none;
     padding: 0;

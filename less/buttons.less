@@ -135,7 +135,8 @@
 
 // Make a button look and behave like a link
 .btn-icon {
-  color: lighten(@btn-default-color, 10%);
+  color: @text-muted;
+
   font-weight: normal;
   border-radius: 0;
 
@@ -155,7 +156,7 @@
   }
   &:hover,
   &:focus {
-    color: darken(@btn-default-color, 8%);
+    color: @btn-default-color!important;
     text-decoration: none;
   }
   &[disabled],

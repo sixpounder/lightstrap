@@ -1,15 +1,13 @@
 .removable-wrapper {
   cursor: default;
-  background-color: @gray;
+  background-color: @brand-primary;
   color: @gray-lighter;
   display: inline-block;
   text-transform: uppercase;
 
-  border-radius: 4px;
-  padding-left: 20px;
-  padding-top: 10px;
-  padding-right: 20px;
-  padding-bottom: 10px;
+  border-radius: 2px;
+  padding: 4px 6px;
+  font-size: 12px;
 
   .removable-inner {
     display: inline-block;
@@ -23,18 +21,17 @@
 
   .removable-action {
     cursor: pointer;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-color: @gray;
+    display: inline;
+    margin-left: 3px;
+    background-color: inherit;
+    color: @gray-lighter;
     position: relative;
     right: 0;
     text-align: center;
     vertical-align: baseline;
     border-radius: 100%;
     &:hover {
-      background-color: @gray-light;
-      color: @gray-lighter;
+      color: @brand-danger;
     }
   }
 }

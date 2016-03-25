@@ -1478,7 +1478,7 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
   border: 0;
-  border-top: 1px solid #fff;
+  border-top: 1px solid #aaa;
 }
 .sr-only {
   position: absolute;
@@ -3773,7 +3773,7 @@ fieldset[disabled] .btn-link:focus {
 }
 .btn-icon {
   font-weight: normal;
-  color: #333;
+  color: #4d4d4d;
   border-radius: 0;
 }
 .btn-icon,
@@ -6624,15 +6624,13 @@ button.close {
 }
 .removable-wrapper {
   display: inline-block;
-  padding-top: 10px;
-  padding-right: 20px;
-  padding-bottom: 10px;
-  padding-left: 20px;
+  padding: 4px 6px;
+  font-size: 12px;
   color: #fff;
   text-transform: uppercase;
   cursor: default;
-  background-color: #888;
-  border-radius: 4px;
+  background-color: #88beec;
+  border-radius: 2px;
 }
 .removable-wrapper .removable-inner {
   display: inline-block;
@@ -6646,18 +6644,17 @@ button.close {
 .removable-wrapper .removable-action {
   position: relative;
   right: 0;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
+  display: inline;
+  margin-left: 3px;
+  color: #fff;
   text-align: center;
   vertical-align: baseline;
   cursor: pointer;
-  background-color: #888;
+  background-color: inherit;
   border-radius: 100%;
 }
 .removable-wrapper .removable-action:hover {
-  color: #fff;
-  background-color: #aaa;
+  color: #d9534f;
 }
 [six-removable].six-removable-small .removable-wrapper {
   padding-top: 2px;
@@ -7694,5 +7691,32 @@ ul.pieces-collection li p.help-block {
   .hidden-print {
     display: none !important;
   }
+}
+.divide-left {
+  border-left: 1px solid #dfe1e3;
+}
+.divide-right {
+  border-right: 1px solid #dfe1e3;
+}
+.divide-top {
+  border-top: 1px solid #dfe1e3;
+}
+.divide-bottom {
+  border-bottom: 1px solid #dfe1e3;
+}
+.mt60 {
+  margin-top: 60px;
+}
+.mt40 {
+  margin-top: 40px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.mt10 {
+  margin-top: 10px;
+}
+.pad-inside-top-medium {
+  padding-top: 20px;
 }
 /*# sourceMappingURL=lightstrap.css.map */
