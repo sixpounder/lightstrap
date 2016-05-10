@@ -9,7 +9,7 @@
 .toolbar {
   background-color: @toolbar-bg-color;
   width: @toolbar-base-width;
-  padding: 10px;
+  padding: 10px 0;
   text-align: center;
   z-index: 0;
 
@@ -78,15 +78,20 @@
       }
       a {
         display: block;
+        text-align: left!important;
         padding: 10px 0px;
+        padding-left: 20px;
         color: @toolbar-nav-color;
         text-align: center;
-        font-size: 1.5em;
+        font-weight: 300;
         text-decoration: none;
+        i {
+          vertical-align: middle;
+        }
         span {
-          font-size: 12px;
           color: inherit;
-          display: none;
+          text-transform: uppercase;
+          visibility: middle;
         }
         &:HOVER {
           text-decoration: none;

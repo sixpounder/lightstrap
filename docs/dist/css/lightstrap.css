@@ -3773,7 +3773,7 @@ fieldset[disabled] .btn-link:focus {
 }
 .btn-icon {
   font-weight: normal;
-  color: #4d4d4d;
+  color: #aaa;
   border-radius: 0;
 }
 .btn-icon,
@@ -3793,7 +3793,7 @@ fieldset[disabled] .btn-icon {
 }
 .btn-icon:hover,
 .btn-icon:focus {
-  color: #1f1f1f;
+  color: #333 !important;
   text-decoration: none;
 }
 .btn-icon[disabled]:hover,
@@ -6585,8 +6585,66 @@ button.close {
 }
 .toolbar {
   z-index: 0;
-  width: 50px;
+  width: 200px;
+  padding: 10px 0;
+  text-align: center;
   background-color: #f8f8f8;
+}
+.toolbar header {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+}
+.toolbar footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  height: 40px;
+  padding: 5px;
+  font-weight: 200;
+  color: #aaa;
+          flex-direction: row;
+  background-color: inherit;
+  border-top: 1px solid #e6e6e6;
+
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+          align-items: center;
+}
+.toolbar footer a {
+  font-size: 10px;
+  font-weight: 200;
+  color: #aaa;
+  text-transform: uppercase;
+}
+.toolbar footer a:hover,
+.toolbar footer a:active {
+  color: #919191;
+}
+.toolbar footer section {
+  border-right: 1px solid #aaa;
+
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.toolbar footer section:last-child {
+  border-right: none;
+}
+.toolbar .toolbar-content {
+  height: 100%;
+  overflow: auto;
 }
 .toolbar ul {
   padding: 0;
@@ -6609,15 +6667,20 @@ button.close {
 .toolbar ul li a {
   display: block;
   padding: 10px 0;
-  font-size: 1.5em;
-  color: #666;
+  padding-left: 20px;
+  font-weight: 300;
+  color: #aaa;
+  text-align: left!important;
   text-align: center;
   text-decoration: none;
 }
+.toolbar ul li a i {
+  vertical-align: middle;
+}
 .toolbar ul li a span {
-  display: none;
-  font-size: 12px;
   color: inherit;
+  text-transform: uppercase;
+  visibility: middle;
 }
 .toolbar ul li a:HOVER {
   text-decoration: none;
@@ -7703,6 +7766,9 @@ ul.pieces-collection li p.help-block {
 }
 .divide-bottom {
   border-bottom: 1px solid #dfe1e3;
+}
+.pad-top-small {
+  padding-top: 10px;
 }
 .mt60 {
   margin-top: 60px;
