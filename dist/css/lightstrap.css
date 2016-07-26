@@ -7785,4 +7785,13 @@ ul.pieces-collection li p.help-block {
 .pad-inside-top-medium {
   padding-top: 20px;
 }
+.pad-inside-small {
+  padding: 10px;
+}
+.pad-inside-medium {
+  padding: 20px;
+}
+.pad-inside-large {
+  padding: 40px;
+}
 /*# sourceMappingURL=lightstrap.css.map */
