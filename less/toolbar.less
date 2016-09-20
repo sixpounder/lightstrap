@@ -6,7 +6,30 @@
 
 @toolbar-footer-height  : 40px;
 
-.toolbar {
+.toolbar-container {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  display: block;
+
+  &.toolbar-visible {
+    display: block!important;
+  }
+
+  &.toolbar-hidden {
+    display: none!important;
+  }
+
+  @media (max-width: @screen-sm-min) {
+    display: none;
+  }
+
+  @media (min-width: @screen-md-min) {
+    display: block;
+  }
+}
+
+.toolbar-container .toolbar {
   background-color: @toolbar-bg-color;
   width: @toolbar-base-width;
   padding: 10px 0;
