@@ -112,7 +112,7 @@
 }
 .cd-panel-header {
   position: fixed;
-  width: 90%;
+  width: 100%;
   height: 50px;
   line-height: 50px;
   background: @panel-default-heading-bg;
@@ -214,7 +214,7 @@
 .cd-panel-container {
   box-shadow: 0 0 10px 4px rgba(0,0,0,0.1);
   position: fixed;
-  width: 90%;
+  width: 100%;
   height: 100%;
   top: 0;
   background-color: @panel-default-heading-bg;
@@ -234,19 +234,16 @@
   .cd-panel-header {
     width: 70%;
   }
-}
-@media only screen and (min-width: @screen-lg) {
-  .cd-panel-header {
-    width: 50%;
-  }
-}
 
-@media only screen and (min-width: @screen-sm) {
   .cd-panel-container {
     width: 70%;
   }
 }
 @media only screen and (min-width: @screen-lg) {
+  .cd-panel-header {
+    width: 50%;
+  }
+
   .cd-panel-container {
     width: 50%;
   }
